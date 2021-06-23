@@ -2,7 +2,7 @@ name: '[Sync Fork] RSSHub Serverless'
 
 on:
   schedule:
-    - cron: '0 20 * * *' # Runs at 20:00 UTC every day.
+    - cron: '0 20 */3 * *' # Runs at 20:00 UTC every 3 days.
 
 jobs:
   update_fork:
